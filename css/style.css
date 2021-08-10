@@ -6,7 +6,7 @@ header {
   height: 290px;
   width: 100%;
   background-color: white;
-  background-image: url("/img/salmon.png");
+  background-image: url("../img/salmon.png");
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 20px;
