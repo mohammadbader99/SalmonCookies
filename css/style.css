@@ -1,62 +1,66 @@
 body {
-    background-color: rgb(105, 167, 187);
+  background-color: rgb(105, 167, 187);
 }
 
 header {
-    height: 290px;
-    width: 100%;
-    background-color: white;
-    background-image: url("https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  height: 290px;
+  width: 100%;
+  background-color: white;
+  background-image: url("https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 h1 {
-    font-size: 50px;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-    padding-top: 135px;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  padding-top: 135px;
 }
 
 nav {
-    font-weight: bold;
-    text-align: center;
-    font-size: 20px;
-    padding-top: 96px;
-  }
-
-  a:link{
-    background-color: rgb(166, 202, 214);
-    color: white;
-    border: 2px solid white;
-    border-radius: 25px;
-    padding: 10px 20px;
-    text-decoration: none;
-  }
-  
-  a:hover{
-    background-color: white;
-    color: black;
-  }
-
-h3 {
-    font-size: 35px;
-    color: white;
-    background-color: rgba(62, 95, 107, 0.5);
-    padding: 25px;
-    margin: 15px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 96px;
 }
 
-ul {
-    font-size: 25px;
-    list-style-type:initial;
-    color: white;
-    background-color: rgba(88, 125, 138, 0.5);
-    padding: 50px;
-    margin: 15px;
+a:link{
+  background-color: rgb(166, 202, 214);
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
-li {
-    padding: 5px;
+a:hover{
+  background-color: white;
+  color: black;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #323635;
+  color: white;
 }
