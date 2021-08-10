@@ -20,12 +20,111 @@
     </header>
 
     <main>
+        <button class="collapsible">Locations with Addresses</button>
+        <div class="content">
+            <table>
+                <tr>
+                    <th>Branches Locations</th>
+                    <th>Addresses (Street, City ,Postal code)</th>
+                </tr>
+                <tr>
+                    <td>Seattle</td>
+                    <td>1022 Hill Haven Drive, Seattle, 98109</td>
+                </tr>
+                <tr>
+                    <td>Tokyo</td>
+                    <td>2923 Blue Spruce Lane, Tokyo, 21045</td>
+                </tr>
+                <tr>
+                    <td>Dubai</td>
+                    <td>2035 Doctors Drive, Dubai, 10185</td>
+                </tr>
+                <tr>
+                    <td>Paris</td>
+                    <td>2174 Taylor Street, Paris, 10528</td>
+                </tr>
+                <tr>
+                    <td>Lima</td>
+                    <td>187 Boundary Street, Lima, 32084</td>
+                </tr>
+            </table>
+        </div>
 
+        <button class="collapsible">Open Hours</button>
+        <div class="content">
+            <p>
+                (All Branches are open from 6am to 7pm from Saturday to Thursday)
+            </p>
+        </div>
+
+        <button class="collapsible">Contact Information</button>
+        <div class="content">
+            <p>
+                <ul>
+                    <li>Mail: <span>md.bader@hotmail.com</span></li>
+                    <li>Phone Number: <span>0790395234</span></li>
+                </ul>
+            </p>
+        </div>
+
+        <section>
+            <h2>About Us</h2>
+
+            <div id="family">
+                <p>
+                    Salmon Cookies is the best place for you and your family.
+                </p>
+            
+
+                <img src="/img/family.jpg" alt="family" width="800">
+            </div>
+
+            <div id="tools">
+                <p>
+                    We use very simple tools to provide our services.
+                </p>
+
+                <img src="/img/cutter.jpeg" alt="cutter">
+                <img src="/img/frosted-cookie.jpg" alt="cookie" height="300">
+            </div>
+
+            <div id="products">
+                <p>
+                    And here are some of our other products:
+                </p>
+                <div>
+                    <img src="/img/shirt.jpg" alt="shirt">
+                    <h3>Shirt</h3>
+                </div>
+                <div>
+                    <img src="/img/fish.jpg" alt="fish stickers" height="324">
+                    <h3>Stickers</h3>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-
+        Created by Mohammad Bader
     </footer>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                }
+                else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
     
 </body>
 </html>
