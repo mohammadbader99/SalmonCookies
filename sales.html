@@ -19,7 +19,27 @@
     </header>
 
     <main id="Sales">
+        <form action="" id="myForm">
+            <fieldset>
 
+                <legend>Adding New Branch</legend>
+
+                <label for ="branchName">Branch Location</label>
+                <input type = "text" name = "branchName" id = "branchName" required/>
+                
+                <label for = "minHourlyCustomers">Minimum Customers per Hour</label>
+                <input type = "number" name = "minHourlyCustomers" id = "minHourlyCustomers" required/>
+              
+                <label for = "maxHourlyCustomers">Maximum Customers per Hour</label>
+                <input type = "number" name = "maxHourlyCustomers" id = "maxHourlyCustomers" required/>
+            
+                <label for = "avgCookiesSale">Average of cookies sales</label>
+                <input type = "text" name ="avgCookiesSale" id = "avgCookiesSale" required/>
+              
+                <input type = "submit" id = "button" value = "Add New Branch" />
+
+            </fieldset>
+        </form>
     </main>
     
     <script src='js/app.js'></script>
