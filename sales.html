@@ -22,21 +22,31 @@
         <form action="" id="myForm">
             <fieldset>
 
-                <legend>Adding New Branch</legend>
+                <div class="title">Adding New Branch</div>
 
-                <label for ="branchName">Branch Location</label>
-                <input type = "text" name = "branchName" id = "branchName" required/>
+                <div class="input-container ic1">
+                    <input class="input" type = "text" name = "branchName" id = "branchName" required/>
+                    <div class="cut"></div>
+                    <label class="placeholder" for ="branchName">Branch Location</label>
+                </div>
+                <div class="input-container ic2">
+                    <input class="input" type = "number" name = "minHourlyCustomers" id = "minHourlyCustomers" required/>
+                    <div class="cut"></div>
+                    <label class="placeholder" for = "minHourlyCustomers">Minimum Customers per Hour</label>
+                </div>
+                <div class="input-container ic2">
+                    <input class="input" type = "number" name = "maxHourlyCustomers" id = "maxHourlyCustomers" required/>
+                    <div class="cut"></div>
+                    <label class="placeholder" for = "maxHourlyCustomers">Maximum Customers per Hour</label>
+                </div>
+                <div class="input-container ic2">
+                    <input class="input" type = "text" name ="avgCookiesSale" id = "avgCookiesSale" required/>
+                    <div class="cut"></div>
+                    <label class="placeholder" for = "avgCookiesSale">Average of cookies sales</label>
+                </div>
                 
-                <label for = "minHourlyCustomers">Minimum Customers per Hour</label>
-                <input type = "number" name = "minHourlyCustomers" id = "minHourlyCustomers" required/>
-              
-                <label for = "maxHourlyCustomers">Maximum Customers per Hour</label>
-                <input type = "number" name = "maxHourlyCustomers" id = "maxHourlyCustomers" required/>
-            
-                <label for = "avgCookiesSale">Average of cookies sales</label>
-                <input type = "text" name ="avgCookiesSale" id = "avgCookiesSale" required/>
-              
-                <input type = "submit" id = "button" value = "Add New Branch" />
+                <button type="submit" id="button" class="submit">Add New Branch</button>
+
 
             </fieldset>
         </form>
