@@ -96,6 +96,41 @@ function createTableFooter() {
     trEl.appendChild(thEl2);
 }
 
+let myform = document.getElementById('myForm');
+
+myform.addEventListener('submit', addBranch);
+
+function addBranch(event) {
+
+    event.preventDefault();
+
+    let branchName = event.target.branchName.value;
+    let minHourlyCustomers = event.target.minHourlyCustomers.value;
+    let maxHourlyCustomers = event.target.maxHourlyCustomers.value;
+    let avgCookiesSale = event.target.avgCookiesSale.value;
+
+    if (maxHourlyCustomers < minHourlyCustomers){
+        alert('Minimum can\'t be larger than maximum');
+    }
+    else if (isNaN(avgCookiesSale)){
+        alert('Average of cookies sales must be a number!');
+    }
+    else{
+
+        tableEl.deleteRow(-1);
+
+        let newBranch = new BranchData(branchName, minHourlyCustomers, maxHourlyCustomers, avgCookiesSale);
+
+        newBranch.randomCustomers();
+        newBranch.calculate();
+        newBranch.render();
+
+        createTableFooter();
+
+        document.getElementById('myForm').reset();
+    }
+}
+
 new BranchData('Seattle', 23, 65, 6.3);
 new BranchData('Tokyo', 3, 24, 1.2);
 new BranchData('Dubai', 11, 38, 3.7);
