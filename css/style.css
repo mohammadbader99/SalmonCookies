@@ -188,3 +188,23 @@ footer {
   text-align: center;
   padding-top: 20px;
 }
+
+fieldset {
+  display: inline-block;
+  background-color: rgb(61, 135, 160);
+  color: white;
+  border: 5px solid white;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 50px 0px;
+}
+
+legend {
+  padding: 5px;
+}
+
+input {
+  margin: 10px;
+  border-radius: 5px;
+  direction
+}
