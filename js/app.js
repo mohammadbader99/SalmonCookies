@@ -109,7 +109,7 @@ function addBranch(event) {
     let maxHourlyCustomers = event.target.maxHourlyCustomers.value;
     let avgCookiesSale = event.target.avgCookiesSale.value;
 
-    if (maxHourlyCustomers < minHourlyCustomers){
+    if (Number(maxHourlyCustomers) < Number(minHourlyCustomers)){
         alert('Minimum can\'t be larger than maximum');
     }
     else if (isNaN(avgCookiesSale)){
