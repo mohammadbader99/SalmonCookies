@@ -42,11 +42,12 @@ a:hover{
 }
 
 table {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  color: rgb(47, 0, 177);;
 }
 
 td, th {
@@ -59,6 +60,7 @@ tr:nth-child(even){background-color: #f2f2f2;}
 tr:hover {background-color: #ddd;}
 
 th {
+  font-family: 'Righteous', cursive;
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
@@ -67,7 +69,8 @@ th {
 }
 
 .content table {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(47, 0, 177);
   border-collapse: collapse;
   width: 90%;
   margin-top: 20px;
@@ -82,6 +85,7 @@ th {
 .content tr:hover {background-color: #ddd;}
 
 .content th {
+  font-family: 'Righteous', cursive;
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
@@ -90,14 +94,15 @@ th {
 }
 
 .collapsible {
+  font-family: 'Righteous', cursive;
   background-color: rgb(61, 135, 160);
   color: white;
   cursor: pointer;
   padding: 18px;
-  width: 800px;
+  width: 900px;
   border: none;
   text-align: left;
-  font-size: 15px;
+  font-size: 24px;
   margin-top: 30px;
   transition: 600ms ease-in;
 }
@@ -105,6 +110,8 @@ th {
 .active, .collapsible:hover {
   background-color: #555;
   transition: 350ms ease-in;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .collapsible:after {
@@ -120,8 +127,9 @@ th {
 }
 
 .content {
+  border-radius: 0px 0px 10px 10px;
   max-height: 0;
-  width: 800px;
+  width: 900px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
@@ -130,6 +138,7 @@ th {
 }
 
 .content p{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 10px 20px;
 }
 
@@ -141,29 +150,47 @@ th {
   padding: 10px 0;
 }
 li span {
-  background-color: rgb(61, 135, 160);
-  color: white;
+  background-color: rgb(216, 216, 216);
+  color: black;
   padding: 3px 5px;
   border-radius: 10px;
 }
 
 li span:hover {
   background-color: #555;
+  color: white;
   transition: 350ms ease-in;
 }
 
+section {
+  padding-top: 35px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  width: 900px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
 section h2{
+  border-radius: 10px;
+  background-color: #555;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 20px;
+  font-family: 'Righteous', cursive;
   font-size: 35px;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 2px black;
-  padding: 50px 0px 25px 0px;
+  padding: 15px 0px;
 }
 
-section p, h3 {
+section p{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 25px;
   text-align: center;
-  color: white;
+  color: black;
   padding: 15px 0px 25px 0px;
 }
 
